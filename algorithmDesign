@@ -1,0 +1,25 @@
+1. Print game name
+2. Ask if user wants help
+    - If so, explain game
+3. Get input from user on which game to play
+    - Start with two choices, add more later
+    - This is numeric input, not a full name
+4. Open correct file
+5. Parse file
+    - Load description of room
+    - Load clues and attach to triggers
+    - Load solutions for locks
+6. Print description of room
+7. Ask user what they want to interact with
+8. Parse input and print associated clue
+9. Add clue to notebook and print message saying "Added to notebook!"
+10. Repeat 6-9, asking if user wants to see description of room again
+11. When user wants to try a lock, see if any locks have been solved
+    - They must be done in order
+    - The next lock will not be revealed until the one before it is solved
+12. Save tries for each lock to a file
+    - On each new try, ask user to input a single letter (pick one) to show the previous tries
+13. Give clues about correct choices/information in the wrong place
+    - Like the Castle Drawbridge in NetHack
+14. When a lock is solved, load the description for the next lock
+15. When all of the locks are solved, load and print "you have escaped" text
